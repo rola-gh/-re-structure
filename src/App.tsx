@@ -3,18 +3,18 @@ import { lazy, Suspense, useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { useMount } from "react-use";
 
-import LoadingSpinner from "@app/components/LoadingSpinner/LoadingSpinner";
+import LoadingSpinner from "@app/gull/components/common/LoadingSpinner/LoadingSpinner";
 
-import { getMe, getTokens } from "./components/auth/auth";
-import { useLocalization } from "./components/features/localization/localization";
+import { getMe, getTokens } from "./app/auth/auth";
+import { useLocalization } from "./app/features/localization/localization";
 import {
   PermissionEnum,
   setPermissions,
-} from "./components/features/permissions/permissions";
-import { useAppDispatch, useAppSelector } from "./utils/store";
+} from "./app/features/permissions/permissions";
+import { useAppDispatch, useAppSelector } from "./app/redux/store";
 
 // Routes are lazy loaded so they will access to correct permissions
-const Routes = lazy(() => import("./utils/redux/routes/Routes"));
+const Routes = lazy(() => import("./app/routes/Routes"));
 
 const App = () => {
   const { loadingTranslation } = useLocalization({ shouldCall: true });

@@ -1,7 +1,7 @@
 const path = require("path");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 const CracoAntDesignPlugin = require("craco-antd");
-const theme = require("./src/components/styles/antd-theme");
+const theme = require("./src/gull/styles/antd-theme");
 
 module.exports = {
   webpack: {

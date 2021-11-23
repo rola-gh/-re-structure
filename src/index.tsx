@@ -5,9 +5,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 
-import store from "@app/utils/store";
+import store from "@app/app/redux/store";
 
-import "@app/components/features/localization/localization";
+import "@app/app/features/localization/localization";
 import reportWebVitals from "./reportWebVitals";
 import "./index.scss";
 
