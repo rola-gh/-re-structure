@@ -5,9 +5,9 @@ import _toInteger from "lodash/toInteger";
 import qs, { ParseOptions, StringifyOptions } from "query-string";
 import { useLocation, useHistory } from "react-router-dom";
 
-import { ItemModalEnum } from "@app/constants/route.constants";
-import { getOrderByExtraction } from "@app/helpers/table.helper";
-import { OrderByDef } from "@app/types/table.types";
+import { ItemModalEnum } from "@app/utils/constants/route.constants";
+import { getOrderByExtraction } from "@app/utils/helpers/table.helper";
+import { OrderByDef } from "@app/utils/types/table.types";
 
 const ARRAY_FORMAT: StringifyOptions["arrayFormat"] = "bracket";
 const QUERY_OPTIONS: StringifyOptions = {

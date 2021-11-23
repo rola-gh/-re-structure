@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { ItemModalEnum } from "@app/constants/route.constants";
+import { ItemModalEnum } from "@app/utils/constants/route.constants";
 
 import useSearchParams from "./useSearchParams";
 

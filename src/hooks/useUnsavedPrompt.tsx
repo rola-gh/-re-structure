@@ -4,7 +4,7 @@ import { FormInstance } from "antd/lib/form/Form";
 import { useTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";
 
-import { modalConfirm } from "@app/components/atoms/ModalConfirm/ModalConfirm";
+import { modalConfirm } from "@app/components/ModalConfirm/ModalConfirm";
 
 interface UnsavedPromptProps {
   form?: FormInstance;
